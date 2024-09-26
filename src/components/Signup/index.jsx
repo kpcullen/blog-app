@@ -2,6 +2,7 @@ import { Button, Form } from 'react-bootstrap'
 import useNotification from '../../hooks/useNotifcation'
 import useSignup from '../../hooks/useSignup'
 import { useRef } from 'react'
+import SignUpFormContainer from './SignUpFormContainer'
 
 const Signup = ({ loginFormRef }) => {
   const notify = useNotification()
@@ -23,29 +24,6 @@ const Signup = ({ loginFormRef }) => {
       formRef.current.reset()
     }
   }
-  return (
-    <Form ref={formRef} onSubmit={handleSignup}>
-      <Form.Group>
-        <Form.Label>name:</Form.Label>
-        <Form.Control type="text" name="signupName" />
-      </Form.Group>
-      <Form.Group></Form.Group>
-      <Form.Group>
-        <Form.Label>username:</Form.Label>
-        <Form.Control type="text" name="signupUsername" />
-      </Form.Group>
-      <Form.Group>
-        <Form.Label>password:</Form.Label>
-        <Form.Control type="password" name="signupPassword" />
-      </Form.Group>
-      <Form.Group>
-        <Form.Label>confirm password:</Form.Label>
-        <Form.Control type="password" name="confirmPassword" />
-      </Form.Group>
-      <Button className="mt-2" variant="primary" type="submit">
-        submit
-      </Button>
-    </Form>
-  )
+  return <SignUpFormContainer formRef={formRef} handleSignup={handleSignup} />
 }
 export default Signup
