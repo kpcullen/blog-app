@@ -1,11 +1,13 @@
-## Full Stack Open Part 4: Express Backend with Unit Testing, MongoDB, and Mongoose
+## BlogApp - Fullstack blog link aggregating app
 
 **Description:**
 
-This project showcases a backend server built using Node.js and Express, with a MongoDB database for data storage and Mongoose for defining schemas and validation. It includes essential features like user creation, login services, and token authentication. To ensure code quality and reliability, unit testing is implemented using Vitest.
+This project showcases a backend server built using Node.js and Express, with a MongoDB database for data storage and Mongoose for defining schemas and validation. The frontend was built with React, using React Bootstrap for styling. State managements is handle with React Query. It includes essential features like user creation, login services, and token authentication. To ensure code quality and reliability, unit testing is implemented using Vitest.
 
 **Key Features:**
 
+- **React Frontend** Frontend built with React, using React Bootstrap for styling.
+- **State Management** UI and database state handle with React Query.
 - **Express Backend:** A Node.js server built with the Express framework.
 - **MongoDB Database:** Stores user data and other relevant information.
 - **Mongoose:** A MongoDB object modeling tool for defining schemas and validation rules.
@@ -15,8 +17,8 @@ This project showcases a backend server built using Node.js and Express, with a 
 
 **Installation:**
 
-1. **Clone the repository:** `git clone https://github.com/yourusername/full-stack-open-part-4.git`
-2. **Install dependencies:** `cd full-stack-open-part-4 && npm install`
+1. **Clone the repository:** `git clone https://github.com/yourusername/blog-app`
+2. **Install dependencies for frontend and backend:** `npm install & cd blogApp-front & npm install`
 
 **Configuration:**
 
@@ -32,12 +34,19 @@ Create a `.env` file in the project root directory and set the following environ
 
 1. **Start the development server:** `npm start`
 
+**Running the Frontend:**
+
+1. **Launch dev mode:** `npm run dev`
+
 **Testing:**
 
 - **Run unit tests:** `npm run test`
 
 **Technologies Used:**
 
+- React
+- React Bootstrap
+- React Query
 - Node.js
 - Express
 - Vitest
